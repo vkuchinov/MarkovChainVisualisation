@@ -344,4 +344,3 @@ src.close()
 src=open("output.svg","w")
 src.writelines(oline)
 src.close()
-
