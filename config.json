@@ -1,0 +1,79 @@
+{
+
+	"data": [
+
+		{
+			"id": "turnout",
+			"type": "crowd-rousing"
+		},
+        
+        {
+			"id": "onevoice",
+			"type": "storytelling"
+		}
+	],
+
+	"parser": [
+
+		{
+			"suffix": "transcript",
+			"attributes": ["startTime", "endTime", "word", "energy"]
+		},
+		{
+			"suffix": "pitch",
+			"attributes": ["time", "pitch"]
+		},
+        
+        {
+			"suffix": "hmm",
+			"attributes": ["time", "nodes", "links"]
+		}
+
+	],
+
+	"in": "assets/layout.svg",
+    "out" : "output.svg",
+    
+	"font": "Arial",
+	"colors": {
+        
+		"storytelling": ["#A31F34", "#F09CA9", "#FFFFFF"],
+		"crowd-rousing": ["#205498", "#779ED1", "#FFFFFF"]
+        
+	},
+    
+    "sets" : [
+        
+        { "type" : "line", "set" : ["baseline", "chains"], "attributes" : ["x1", "x2", "y1"] },
+        { "type" : "rect", "set" : ["linechart", "blocks"], "attributes" : ["x", "y", "width", "height"] }
+    
+    ],
+
+	"linechart": {
+		"x": 0,
+		"y": 0,
+		"w": 0,
+		"h": 0,
+        "min" : 0,
+        "max" : 0
+	},
+	"baseline": {
+		"x": 0,
+		"y": 0,
+		"w": 0,
+		"h": 0
+	},
+	"blocks": {
+		"x": 0,
+		"y": 0,
+		"w": 0,
+		"h": 0
+	},
+	"chains": {
+		"x": 0,
+		"y": 0,
+		"w": 0,
+		"h": 0
+	}
+
+}
