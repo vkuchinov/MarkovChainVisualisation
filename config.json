@@ -31,7 +31,7 @@
 
 	],
 
-	"in": "assets/layout.svg",
+	"in": "assets/layout2.svg",
     "out" : "output.svg",
     
 	"font": "Arial",

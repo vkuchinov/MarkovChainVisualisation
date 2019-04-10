@@ -64,6 +64,7 @@ def renderLineChart(ctx_):
     for plot in data:
         
         offsetY = h / (len(data)) * count
+        if count > 0: offsetY += 5.669 * count
         last = None
                 
         for i in range(0, len(data[plot]['pitch']['time'])):
@@ -95,6 +96,7 @@ def renderBlocks(ctx_):
     for plot in data:
         
         offsetY = h / (len(data)) * count
+        if count > 0: offsetY += 5.669 * count
         step = float(config['blocks']['w']) / len(data[plot]['pitch']['time'])
                 
         for i in range(0, len(data[plot]['pitch']['time'])):
@@ -121,6 +123,7 @@ def renderType(ctx_):
     for plot in data:
         
         offsetY = h / (len(data)) * count
+        if count > 0: offsetY += 5.669 * count
                 
         for i in range(0, len(data[plot]['transcript']['startTime'])):
             
@@ -173,6 +176,7 @@ def renderHMM(ctx_):
             chains.append(chain)
         
         offsetY = h / (len(data)) * count
+        if count > 0: offsetY += 5.669 * count
         
         for chain in chains:
             
