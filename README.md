@@ -47,7 +47,8 @@ Each line has 2 CSV files: transcript and pitch:<br><br>
 Still, I don't have any ideas how to get HMMs and block colours out of that.<br>
 <b>energy</b> stands for word size, <b>pitch</b> is linear scale through time.<br>
 
-<h2>I bet, your visual reference with these two samples are generated, so if you want to have these calculations on my side, you can simply send me your code. Otherwise, I need another col in {name_pitch}, called <b>color with 0-2 range</b>, defining block colours and another file, let's say with <b>hmm</b> suffix, containing something like this:</h2>
+<h3>I bet, your visual reference with these two samples are generated, so if you want to have these calculations on my side, you can simply send me your code. Otherwise, I need another col in {name_pitch}, called <b>color with 0-2 range</b>, defining block colours and another file, let's say with <b>hmm</b> suffix, containing something like this:</h3>
+
 ```
 "time","nodes","links"
 0.05,"1","0"
