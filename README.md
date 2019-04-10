@@ -7,6 +7,6 @@ The initial concept is to use Adobe InDesign/Illustrator templates as procedural
 
 Cyan blocks are placeholder for every piece (line).
 
-![alt text](https://github.com/vkuchinov/MarkovChainVisualisation/blob/master/layouts/preview2.jpg?raw=true "Layouts")<br>
+![alt text](https://github.com/vkuchinov/MarkovChainVisualisation/blob/master/layouts/preview2.png?raw=true "Layouts")<br>
 
 
