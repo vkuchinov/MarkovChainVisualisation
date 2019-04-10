@@ -43,5 +43,30 @@ Each line has 2 CSV files: transcript and pitch:<br><br>
 0.125,278.196868896484
 ...
 ```
+<br>
+Still, I don't have any ideas how to get HMMs and block colours out of that.<br>
+<b>energy</b> stands for word size, <b>pitch</b> is linear scale through time.<br>
 
+I bet, your visual reference with these two samples are generated, so if you want to have these calculations on my side, you can simply send me your code. Otherwise, I need another col in {name_pitch}, called <b>color with 0-2 range</b>, defining block colours and another file, let's say with <b>hmm</b> suffix, containing something like this:<br>
+```
+"time","nodes","links"
+0.05,"1","0"
+0.21,"0,2","0_1"
+0.33,"1","0"
+0.40,"1,0","1_0"
+0.49,"0","0"
+0.57,"1","0"
+0.65,"2","0"
+0.72,"1,0,2","0_1,1_2"
+0.89,"2,0","0,1"
+1.01,"1","0"
+1.12,"1","0"
+1.20,"2","0"
+1.28,"0,1","1_0"
+1.35,"0,2,1","1_0,2_1,0"
+```
 
+where time is x position, nodes values are actually colours and links—0 for self-closing, 1_0 link from node #1 to node #0,
+so, for example, for storytelling nodes: 2,0, links: 1-0 means that first node is white, second is dark red, and there is only one link which goes from second node to first one.<br>
+
+The current version could be consiidered as pre-release version. Pretty sure that you want multiple pages PDF's as deliverables. For this purpose, I need much more data, not just for two lines, at lease 6-9.
